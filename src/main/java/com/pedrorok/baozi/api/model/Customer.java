@@ -1,5 +1,6 @@
 package com.pedrorok.baozi.api.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -19,11 +20,13 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonProperty("nome")
     @NotBlank(message = "Nome é obrigatório")
     @Size(min = 1, max = 100)
     @Column(nullable = false)
     private String name;
 
+    @JsonProperty("clienteDesde")
     @NotNull(message = "Data de cadastro é obrigatória")
     @Column(name = "customer_since", nullable = false)
     private LocalDate customerSince;

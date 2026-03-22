@@ -1,4 +1,4 @@
-package com.pedrorok.baozi.api.repo;
+package com.pedrorok.baozi.api.repository;
 
 import com.pedrorok.baozi.api.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -7,4 +7,3 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 }
-

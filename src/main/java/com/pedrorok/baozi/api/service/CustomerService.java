@@ -1,7 +1,7 @@
 package com.pedrorok.baozi.api.service;
 
 import com.pedrorok.baozi.api.model.Customer;
-import com.pedrorok.baozi.api.repo.CustomerRepository;
+import com.pedrorok.baozi.api.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
