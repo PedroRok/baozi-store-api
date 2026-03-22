@@ -44,7 +44,7 @@ public class ProductController {
             return ResponseEntity.notFound().build();
         }
         productService.delete(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     @PutMapping("/{id}")

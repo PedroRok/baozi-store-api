@@ -49,7 +49,7 @@ public class OrderController {
             return ResponseEntity.notFound().build();
         }
         orderService.delete(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     @PutMapping("/{id}")

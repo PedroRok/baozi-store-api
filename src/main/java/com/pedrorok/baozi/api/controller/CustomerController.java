@@ -44,7 +44,7 @@ public class CustomerController {
             return ResponseEntity.notFound().build();
         }
         customerService.delete(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     @PutMapping("/{id}")
